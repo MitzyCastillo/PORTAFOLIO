@@ -759,10 +759,6 @@ span {
     }
 }
 
-
-
-
-
 @media (max-width: 900px) {
     .openNav {
         display: block;
@@ -880,6 +876,7 @@ span {
 
     .tituloAbout {
         text-align: center;
+        font-size: 30px;
     }
 
     .informacionAbout p {
