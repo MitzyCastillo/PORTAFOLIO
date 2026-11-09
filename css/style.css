@@ -785,13 +785,11 @@ span {
         z-index: 1001;
         box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
         transform: translateX(100%);
-        visibility:hidden;
-        transition: transform 0.35s ease, visiblity 0.35s;
+        transition: transform 0.35s ease;
     }
 
     .barraMenu.active .navNavegacion {
         transform: translateX(0%);
-
     }
 
     .closeNav {
