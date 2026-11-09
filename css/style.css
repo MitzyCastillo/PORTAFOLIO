@@ -847,8 +847,9 @@ span {
     /* Sección About */
     .about .container {
         flex-direction: column;
-        gap: 24px;
+        gap: 28px;
         align-items: center;
+        padding: 40px 0;
     }
 
     .imagen {
@@ -858,8 +859,9 @@ span {
     }
     .imagen img{
         width: 100%;
-        max-width: 400px;
+        max-width: 260px;
         height: auto;
+        border-radius: 16px;
     }
 
     .about .img2 {
@@ -871,6 +873,9 @@ span {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        max-width: 522px;
+        
     }
 
     .tituloAbout {
@@ -897,7 +902,11 @@ span {
     .cardProyecto {
         height: 395px;
         width: 350px;
-
+    }
+    main img{
+        width:100%;
+        height:auto;
+        display: block;
     }
 
     /* Seccion de contacto */
