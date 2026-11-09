@@ -1,0 +1,1060 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.5s;
+}
+
+:root {
+    --primary-color: #EBEBEB;
+    --secondary-color: #535255;
+    --accent-color: #FF444B;
+    --font1: 'Kalufira', sans-serif;
+    --font2: 'Josefin Sans', sans-serif;
+    --fs-hero: clamp(2.5rem, 1.2rem + 7vw, 10.625rem);
+    /* 40px → 170px, H1 grandes tipo "RARAVEZ" */
+    --fs-h2: clamp(1.75rem, 1.2rem + 3vw, 5rem);
+    /* 28px → 80px, títulos de sección */
+    --fs-h3: clamp(1.25rem, 1.1rem + 1vw, 2rem);
+    /* 20px → 32px */
+    --fs-body: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+    /* 16px → 18px, párrafos */
+    --fs-lead: clamp(1rem, 0.85rem + 1.2vw, 1.875rem);
+    /* 16px → 30px, párrafos destacados (about, proyectos) */
+    --fs-small: clamp(0.875rem, 0.85rem + 0.15vw, 1rem);
+    /* 14px → 16px, nav/botones */
+}
+
+.barraMenu {
+    width: 100%;
+    background-color: var(--primary-color);
+    position: fixed;
+    z-index: 100000;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.containerNav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    align-items: center;
+}
+
+nav {
+    align-items: center;
+    align-content: center;
+}
+
+.navItem :hover {
+    color: var(--accent-color);
+    transition: 0.5s;
+}
+
+.logo {
+    align-items: center;
+    align-content: center;
+}
+
+.logo p {
+    font-family: var(--font1);
+    font-size: var(--fs-lead);
+    color: var(--accent-color);
+}
+
+.navLink {
+    font-family: var(--font2);
+    font-size: 18px;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+
+/* SECCION BANNER */
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.infoHeader {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 100px;
+}
+
+.izquierda {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-family: var(--font1);
+    font-size: var(--fs-hero);
+    color: var(--accent-color);
+    width: 80%;
+}
+
+.izquierda p {
+    color: var(--secondary-color);
+    font-family: var(--font2);
+    font-size: var(--fs-lead);
+    padding-top: 25px;
+    width: 85%;
+}
+
+.btn {
+    width: 150px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: var(--font2);
+
+}
+
+.botonBanner {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.botonBanner:hover {
+    background-color: var(--accent-color);
+}
+
+.derecha {
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.uno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.img1 {
+    width: 435px;
+    height: 625px;
+    object-fit: cover;
+}
+
+/* SECCION ABOUT */
+
+.about {
+    padding: 20px 0;
+    background-color: var(--primary-color);
+}
+.informacion-about{
+    width: 50%;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.imagen {
+    object-fit: cover;
+    width: 35%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.about .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px;
+}
+
+h2 {
+    font-family: var(--font1);
+    font-size: var(--fs-h2);
+    color: var(--accent-color);
+}
+
+.tituloAbout {
+    background-image: url('/img/SobreMi/texura-sobre-mi.jpg');
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.informacionAbout h2 {
+    text-align: center;
+    padding: 0;
+}
+
+span {
+    color: var(--accent-color);
+    font-family: var(--font1);
+}
+
+.informacionAbout p {
+    font-family: var(--font2);
+    text-align: center;
+    font-size: var(--fs-lead);
+    padding: 50px 0;
+}
+
+.informacionAbout {
+    width: 50%;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.imagen img:hover {
+    transform: scale(1.05);
+}
+
+
+/* SECCION PROYECTOS */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.title img {
+    width: 150px;
+
+}
+
+.proyectos {
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+.proyectos h3 {
+    padding-top: 50px;
+}
+
+.proyectos h2 {
+    text-align: center;
+}
+
+.gridProyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 40px;
+    padding: 40px 50px;
+    justify-items: center;
+}
+
+.cardProyecto {
+    width: 100%;
+    height: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.card-link {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+#cardProyecto1 {
+    background-image: url('/img/ProyectoDalessa/foto-perfil-dalessa.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cardProyecto2 {
+    background-image: url('/img/ProyectoGYM/proyecto-perfil-gym.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cardProyecto3 {
+    background-image: url('/img/ProyectoLama/proyecto3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.informacion {
+    position: absolute;
+    background-color: rgba(121, 115, 115, 0.5);
+    top: 80%;
+    width: 100%;
+    height: 100%;
+    padding: 0 25px;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    transform: translateY(70%);
+    transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+.informacion h3 {
+    font-family: var(--font2);
+    color: var(--primary-color);
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.informacion p {
+    font-family: var(--font2);
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.informacion .botonBanner {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    margin-top: 15px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
+}
+
+.cardProyecto:hover .informacion .botonBanner {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cardProyecto:hover .informacion {
+    top: 0;
+    transform: translateY(0);
+    background-color: rgba(136, 123, 123, 0.7);
+}
+
+/* SECCION CONTACTO */
+.contacto {
+    background-color: var(--primary-color);
+}
+
+.contacto .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 80px 6vw;
+}
+
+.contacto img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 48px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.iconos a {
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin: 0 10px;
+}
+
+.iconos a:hover,
+.iconos a:focus-visible {
+    color: var(--accent-color);
+    transform: translateY(-4px);
+}
+
+.iconos a:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .iconos a {
+        transition: none;
+    }
+}
+
+.ilustracion--pulso {
+    animation: pulso 2.5s ease-in-out infinite;
+}
+
+@keyframes pulso {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.06);
+    }
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--primary-color);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-family: var(--font2);
+    color: var(--secondary-color);
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/* CSS DALESSA */
+.infoHeader {
+    padding: 0;
+}
+
+.bannerDalessa {
+    background-image: url(/img/ProyectoDalessa/conjuntoAzul.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hero-content .infoText {
+    position: static;
+    text-align: center;
+}
+
+.infoText {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    text-align: right;
+    color: #fff;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, .35);
+    font-family: 'Poppins', sans-serif;
+}
+
+.infoText h1,
+.infoText h4 {
+    font-size: clamp(2.8125rem, 1.5rem + 6vw, 7.5rem);
+    font-weight: 500;
+}
+
+.infoText p {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Seccion infoDalessa */
+.imagenDa {
+    width: 35%;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.subtituloDalessa {
+    font-family: Poppins, sans-serif;
+    font-size: var(--fs-h3);
+    color: #000;
+    text-align: center;
+}
+
+.tituloDalessa {
+    font-family: Poppins, sans-serif;
+    font-size: var(--fs-h2);
+    color: #000;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.informacionDalessa p {
+    text-align: left;
+    padding-top: 40px;
+    font-family: Poppins, sans-serif;
+    font-size: var(--fs-lead);
+}
+
+/* Seccion Business Card */
+.about--gallery {
+    background-image: url(/img/ProyectoDalessa/businescard-dalessa.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 950px;
+}
+
+/* Seccion de contacto */
+.iconos--contacto {
+    margin-top: 25px;
+}
+
+.contacto-dalessa {
+    background-color: #1E1E1E;
+}
+
+.contacto-dalessa p,
+.contacto-dalessa h2 {
+    color: #EBEBEB;
+}
+
+/* Seccion de Galeria */
+.about--split {
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+
+.etiquetaRopa,
+.empaque {
+    min-height: 600px;
+    width: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.etiquetaRopa {
+    background-image: url(/img/ProyectoDalessa/etiquetas-dalessa.jpg);
+}
+
+.empaque {
+    background-image: url(/img/ProyectoDalessa/empaque-bolsa-dalessa.png);
+}
+
+/* CSS LAMA  */
+.bannerLama {
+    background-image: url(/img/ProyectoLama/bannerLama.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* INFOLAMA */
+.about--lama {
+    background-color: #E8D8C3;
+}
+
+.tituloLama {
+    font-family: Pilowlava, sans-serif;
+    font-size: var(--fs-h2);
+    color: #C65A1E;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.subtituloLama {
+    font-family: Poppins, sans-serif;
+    font-size: var(--fs-h3);
+    color: #C65A1E;
+    text-align: center;
+}
+
+.informacionLama p {
+    text-align: left;
+    font-size: var(--fs-lead);
+}
+
+/* seccion de presentacion de logo */
+.about--logo {
+    background-image: url(/img/ProyectoLama/LamaPresentation.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Seccion empaque comida */
+.toteBag,
+.Bolsa {
+    min-height: 600px;
+    width: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.toteBag {
+    background-image: url(/img/ProyectoLama/VASOS.png);
+}
+
+.Bolsa {
+    background-image: url(/img/ProyectoLama/empaque-estereofon-blanco\ .png);
+}
+
+/* CSS ZONA GYM */
+.bannerZonaGym {
+    background-image: url(/img/ProyectoGYM/SignBoard_Mockup.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tituloZona {
+    font-family: Poppins, sans-serif;
+    font-size: var(--fs-h2);
+    color: #1c1c1c;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.subtituloZona {
+    font-family: Poppins, sans-serif;
+    font-size: var(--fs-h3);
+    color: #1c1c1c;
+    text-align: center;
+}
+
+.informacionZona p {
+    text-align: left;
+    width: 90%;
+    font-size: var(--fs-lead);
+}
+
+.about--zona {
+    background-image: url(/img/ProyectoGYM/backgroundzonagym.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+}
+
+.InfoTextZona {
+    right: 20%;
+    bottom: -100%;
+    text-align: center;
+}
+
+.GYM {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.slogan {
+    width: 100%;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.letrasImagen {
+    width: 400px;
+}
+
+/* INICIO DEL RESPONSIVE */
+/* ===== Base: así se ve en ESCRITORIO por defecto ===== */
+.navNavegacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.openNav,
+.closeNav {
+    display: none;
+    /* ocultos en escritorio */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+/* responsive */
+
+
+@media (max-width: 1024px) {
+    .img1 {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .infoHeader {
+        width: 94%;
+    }
+
+    .izquierda {
+        width: 54%;
+    }
+
+    .derecha {
+        width: 44%;
+    }
+
+    .img2 {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .gridProyectos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 40px 30px;
+    }
+
+    .cardProyecto {
+        height: 480px;
+    }
+}
+
+
+
+
+
+@media (max-width: 900px) {
+    .openNav {
+        display: block;
+    }
+
+    .navNavegacion {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 50vh;
+        width: 70%;
+        max-width: 250px;
+        background: var(--primary-color);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 24px;
+        padding: 80px 32px 40px;
+        z-index: 1001;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+        transform: translateX(100%);
+        transition: transform 0.35s ease;
+    }
+
+    .barraMenu.active .navNavegacion {
+        transform: translateX(0%);
+
+    }
+
+    .closeNav {
+        display: block;
+        position: absolute;
+        top: 20px;
+    }
+
+    header {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .infoHeader {
+        overflow: visible;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 100px 20px 40px;
+        height: auto;
+    }
+
+    .izquierda {
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .izquierda h1 {
+        font-size: var(--fs-hero);
+        width: 100%;
+        text-align: center;
+    }
+
+    .izquierda p {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .derecha {
+        width: 70%;
+        justify-content: center;
+    }
+
+    .img1 {
+        width: 70%;
+        max-width: 260px;
+        height: auto;
+        object-fit: contain;
+        align-items: center;
+    }
+
+    /* Sección About */
+    .about .container {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .imagen {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .imagen img{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .about .img2 {
+        width: 50%;
+        height: auto;
+    }
+
+    .about .informacionAbout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tituloAbout {
+        text-align: center;
+    }
+
+    .informacionAbout p {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Seccion de proyectos */
+
+    .title img {
+        width: 15%;
+    }
+
+    .gridProyectos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardProyecto {
+        height: 395px;
+        width: 350px;
+
+    }
+
+    /* Seccion de contacto */
+    .contacto img {
+        width: 50%;
+    }
+
+    /* seccion de proyectos */
+    .imagenDa {
+        align-items: center;
+        margin-top: 9%;
+    }
+
+    .letrasImagen {
+        width: 320px;
+        height: auto;
+    }
+
+    .lamaText {
+        font-size: 22px;
+    }
+
+    .slogan {
+        font-size: 15px;
+    }
+
+    .about--split {
+        flex-direction: column;
+    }
+
+    .etiquetaRopa,
+    .empaque,
+    .toteBag,
+    .Bolsa {
+        width: 100%;
+        min-height: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .derecha {
+        flex-direction: column;
+    }
+
+    .img1 {
+        width: 100%;
+        height: auto;
+        margin: 5px auto;
+        object-fit: contain;
+    }
+
+    .about .container {
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 60px 20px;
+    }
+
+    .about .imagen {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .aboutDatos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dato {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagen img {
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .izquierda p {
+        width: 100%;
+    }
+
+    .img1 {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .imagen .img2 {
+        width: 350px;
+        height: 350px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .title img {
+        width: 80px;
+    }
+
+    .gridProyectos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardProyecto {
+        height: 340px;
+    }
+
+    .botonBanner {
+        width: 80%;
+        text-align: center;
+    }
+
+    .informacion h3 {
+        font-size: 20px;
+    }
+
+    .informacion p {
+        font-size: 14px;
+    }
+
+    .iconos {
+        gap: 20px;
+    }
+
+    .iconos a {
+        font-size: 25px;
+    }
+
+    .contacto img {
+        width: 180px;
+    }
+
+    .infoText h4 {
+        font-size: 34px;
+    }
+
+    .imagenDa {
+        align-items: center;
+        margin-top: 9%;
+    }
+
+    .letrasImagen {
+        width: 320px;
+        height: auto;
+    }
+
+    .lamaText {
+        font-size: 22px;
+    }
+
+    .slogan {
+        font-size: 15px;
+    }
+}
