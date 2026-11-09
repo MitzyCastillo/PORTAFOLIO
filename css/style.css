@@ -766,6 +766,7 @@ span {
 @media (max-width: 900px) {
     .openNav {
         display: block;
+        color:var(--secondary-color);
     }
 
     .navNavegacion {
@@ -784,7 +785,8 @@ span {
         z-index: 1001;
         box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
         transform: translateX(100%);
-        transition: transform 0.35s ease;
+        visibility:hidden;
+        transition: transform 0.35s ease, visiblity 0.35s;
     }
 
     .barraMenu.active .navNavegacion {
@@ -796,6 +798,7 @@ span {
         display: block;
         position: absolute;
         top: 20px;
+        color:var(--secondary-color);
     }
 
     header {
