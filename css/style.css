@@ -876,8 +876,9 @@ span {
 
     .tituloAbout {
         text-align: center;
-        font-size:45px;
-        
+    }
+    h2{
+    font-size: var(--fs-h3);
     }
 
     .informacionAbout p {
