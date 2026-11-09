@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @font-face {
     font-family: 'Kalufira';
-    src: url('/tipografia/Kalufira.otf') format('truetype');
+    src: url('/tipografia/Kalufira.otf');
 }
 
 @font-face {
-    font-family: 'Josefin Sans';
-    src: url('/tipografia/Josefin_Sans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'JosefinSans';
+    src: url('/tipografia/Josefin_Sans-Regular.ttf');
 }
 html {
     scroll-behavior: smooth;
@@ -33,19 +31,13 @@ body {
     --secondary-color: #535255;
     --accent-color: #FF444B;
     --font1: 'Kalufira', sans-serif;
-    --font2: 'Josefin Sans', sans-serif;
+    --font2: 'JosefinSans', sans-serif;
     --fs-hero: clamp(2.5rem, 1.2rem + 7vw, 10.625rem);
-    /* 40px → 170px, H1 grandes tipo "RARAVEZ" */
     --fs-h2: clamp(1.75rem, 1.2rem + 3vw, 5rem);
-    /* 28px → 80px, títulos de sección */
     --fs-h3: clamp(1.25rem, 1.1rem + 1vw, 2rem);
-    /* 20px → 32px */
     --fs-body: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
-    /* 16px → 18px, párrafos */
     --fs-lead: clamp(1rem, 0.85rem + 1.2vw, 1.875rem);
-    /* 16px → 30px, párrafos destacados (about, proyectos) */
     --fs-small: clamp(0.875rem, 0.85rem + 0.15vw, 1rem);
-    /* 14px → 16px, nav/botones */
 }
 
 .barraMenu {
