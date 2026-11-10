@@ -760,6 +760,9 @@ span {
 }
 
 @media (max-width: 900px) {
+    h1{
+        font-size: 60px;
+    }
     .openNav {
         display: block;
         color:var(--secondary-color);
@@ -877,8 +880,9 @@ span {
     .tituloAbout {
         text-align: center;
     }
+    
     h2{
-    font-size: 45px;
+    font-size: 50px;
     }
 
     .informacionAbout p {
